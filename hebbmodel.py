@@ -5,16 +5,16 @@ from tests_data import bipolar_AND_test_data
 
 # hebb model, returning new weights and bias
 def hebb_model(input_dicts):
-    input1 = 0
-    input2 = 0
+    weight1 = 0
+    weight2 = 0
     bias = 0
     for data in input_dicts:
-        input1 += data['input1'] * data['target']
-        input2 += data['input2'] * data['target']
+        weight1 += data['input1'] * data['target']
+        weight2 += data['input2'] * data['target']
         bias += 1 * data['target']
     return {
-        'input1': input1,
-        'input2': input2,
+        'weight1': weight1,
+        'weight2': weight2,
         'bias': bias
     }
 

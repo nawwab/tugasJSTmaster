@@ -91,3 +91,26 @@ biner_OR_test_data = [
         'target': 1
     }
 ]
+
+bipolar_biner_AND_test_data = [
+    {
+        'input1': 0,
+        'input2': 0,
+        'target': -1
+    },
+    {
+        'input1': 0,
+        'input2': 1,
+        'target': -1
+    },
+    {
+        'input1': 1,
+        'input2': 0,
+        'target': -1
+    },
+    {
+        'input1': 1,
+        'input2': 1,
+        'target': 1
+    }
+]
